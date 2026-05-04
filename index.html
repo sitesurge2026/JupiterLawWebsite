@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
@@ -62,10 +62,10 @@
                         "on-secondary-container": "#dab36a"
                     },
                     "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "2rem"
                     },
                     "spacing": {
                         "container-max": "1280px",
@@ -75,22 +75,22 @@
                         "section-gap": "120px"
                     },
                     "fontFamily": {
-                        "display-hero": ["Inter"],
-                        "headline-lg": ["Inter"],
-                        "button": ["Inter"],
-                        "headline-md": ["Inter"],
-                        "body-lg": ["Inter"],
-                        "body-md": ["Inter"],
-                        "label-caps": ["Inter"]
+                    "button": ["Hind", "sans-serif"],
+                    "body-md": ["Hind", "sans-serif"],
+                    "body-lg": ["Hind", "sans-serif"],
+                    "headline-md": ["Hind", "sans-serif"],
+                    "headline-lg": ["Hind", "sans-serif"],
+                    "label-caps": ["Hind", "sans-serif"],
+                    "display-hero": ["Hind", "sans-serif"]
                     },
                     "fontSize": {
-                        "display-hero": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
-                        "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
-                        "button": ["14px", {"lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600"}],
-                        "headline-md": ["30px", {"lineHeight": "1.3", "fontWeight": "500"}],
-                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "700"}]
+                    "button": ["14px", {"lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["30px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "display-hero": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}]
                     }
                 },
             },
@@ -112,11 +112,14 @@
 </head>
 <body class="font-body-md">
 <!-- TopNavBar -->
-<nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-7xl flex justify-between items-center px-8 py-4 z-50 bg-slate-950/40 backdrop-blur-xl border border-slate-400/20 rounded-2xl shadow-2xl transition-all duration-300">
+<nav class="fixed top-8 left-1/2 -translate-x-1/2 w-[calc(100%-4rem)] max-w-7xl flex justify-between items-center px-10 py-5 z-50 bg-slate-950/40 backdrop-blur-xl border border-slate-400/20 rounded-[2.5rem] shadow-2xl transition-all duration-300">
 <div class="max-w-7xl mx-auto w-full flex justify-between items-center">
+<div class="flex items-center gap-3">
+<svg class="text-amber-400 fill-current w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 4L18 12L6 20V4Z"></path></svg>
 <div class="text-2xl font-bold tracking-tighter text-slate-100">Jupiter Law</div>
+</div>
 <div class="hidden md:flex items-center gap-8">
-<a class="font-['Airport',_sans-serif] tracking-tight text-sm uppercase font-semibold text-amber-400 border-b-2 border-amber-400 pb-1" href="index.html">Practice Areas</a>
+<a class="font-['Airport',_sans-serif] tracking-tight text-sm uppercase font-semibold text-amber-400 border-b-2 border-amber-400 pb-1" href="index.html">Home</a>
 <a class="font-['Airport',_sans-serif] tracking-tight text-sm uppercase font-semibold text-slate-300 hover:text-amber-400 transition-colors" href="about-firm.html">About Us</a>
 <a class="font-['Airport',_sans-serif] tracking-tight text-sm uppercase font-semibold text-slate-300 hover:text-amber-400 transition-colors" href="contact.html">Contact</a>
 </div>
