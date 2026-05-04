@@ -53,7 +53,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <span className="block text-white font-semibold mb-2">Enquiries</span>
-                    <p className="text-brand-text-muted text-sm">enquiries@jupiterlaw.co.uk</p>
+                    <p className="text-brand-text-muted text-sm">atif@jupiterlaw.co.uk</p>
                   </div>
                 </div>
               </div>
