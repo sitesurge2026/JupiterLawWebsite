@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en-GB"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error": "#ffb4ab",
+                    "primary": "#bec6e0",
+                    "secondary-container": "#604403",
+                    "tertiary-container": "#081828",
+                    "inverse-primary": "#565e74",
+                    "on-primary-container": "#798098",
+                    "on-error-container": "#ffdad6",
+                    "error-container": "#93000a",
+                    "inverse-on-surface": "#263143",
+                    "on-surface": "#d8e3fb",
+                    "on-secondary-container": "#dab36a",
+                    "outline": "#909097",
+                    "outline-variant": "#45464d",
+                    "on-primary-fixed": "#131b2e",
+                    "on-tertiary": "#233143",
+                    "on-secondary": "#412d00",
+                    "primary-fixed-dim": "#bec6e0",
+                    "on-error": "#690005",
+                    "secondary": "#e9c176",
+                    "tertiary": "#b9c8de",
+                    "inverse-surface": "#d8e3fb",
+                    "on-secondary-fixed": "#261900",
+                    "tertiary-fixed-dim": "#b9c8de",
+                    "surface-container-low": "#111c2d",
+                    "surface-variant": "#2a3548",
+                    "surface-tint": "#bec6e0",
+                    "secondary-fixed": "#ffdea5",
+                    "primary-fixed": "#dae2fd",
+                    "surface-dim": "#081425",
+                    "on-primary": "#283044",
+                    "primary-container": "#0f172a",
+                    "on-tertiary-container": "#738296",
+                    "on-surface-variant": "#c6c6cd",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "surface-container-highest": "#2a3548",
+                    "on-tertiary-fixed-variant": "#39485a",
+                    "on-tertiary-fixed": "#0d1c2d",
+                    "surface-container-high": "#1f2a3c",
+                    "surface-container-lowest": "#040e1f",
+                    "surface": "#081425",
+                    "on-background": "#d8e3fb",
+                    "tertiary-fixed": "#d4e4fa",
+                    "surface-container": "#152031",
+                    "background": "#081425",
+                    "surface-bright": "#2f3a4c",
+                    "secondary-fixed-dim": "#e9c176"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "margin-edge": "64px",
+                    "gutter": "32px",
+                    "container-max": "1280px",
+                    "section-gap": "120px"
+            },
+            "fontFamily": {
+                    "button": ["Inter"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "label-caps": ["Inter"],
+                    "display-hero": ["Inter"]
+            },
+            "fontSize": {
+                    "button": ["14px", {"lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["30px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "display-hero": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(8, 20, 37, 0.4), rgba(8, 20, 37, 1));
+        }
+        .glass-panel {
+            background: rgba(21, 32, 49, 0.7);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary selection:text-on-secondary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 border-b border-slate-400/20 bg-slate-950/80 backdrop-blur-md flex justify-between items-center px-8 py-6 max-w-full">
+<div class="text-xl font-bold tracking-tighter text-slate-100">Jupiter Law</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-inter uppercase tracking-widest text-xs font-semibold text-slate-400 hover:text-slate-100 transition-colors" href="#">Practice Areas</a>
+<a class="font-inter uppercase tracking-widest text-xs font-semibold text-amber-500 border-b-2 border-amber-500 pb-1" href="#">About Us</a>
+<a class="font-inter uppercase tracking-widest text-xs font-semibold text-slate-400 hover:text-slate-100 transition-colors" href="#">Success Stories</a>
+<a class="font-inter uppercase tracking-widest text-xs font-semibold text-slate-400 hover:text-slate-100 transition-colors" href="#">Careers</a>
+</div>
+<button class="bg-secondary text-on-secondary font-button text-button px-6 py-3 rounded hover:scale-95 transition-all duration-200">
+            Consultation
+        </button>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[819px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover grayscale opacity-50" data-alt="A cinematic, low-exposure wide shot of the Manchester skyline at twilight, featuring the modern glass towers of Deansgate Square and the Beetham Tower. The scene is graded with deep blue and slate tones to match a professional dark-mode UI. Atmospheric city lights twinkle in the distance, creating a sense of authoritative urban permanence and sophisticated legal power." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpmoal6yTHUnGkqNNVdFsgHq70KR7oJ5-DmVRdNFo6cEfbq3PKGAKvgedWAdaeglHmblfi-CqSco6fnQmZC88Mo_iDC08e6QQ5j2p99-CcORSnxRnKWYJBb0W0D6-rQdImkuJDj590SdummfI5dBZ2s9kjd39OVZ6RK5H0DaHC7TmiRNNiGoXuQxKYSLLpQKy3PBfZh4DW7X2Mw5oh_c4qlI69Q_VEPl4HAlLDJA2e2oQDpEHtUUJSzABBKDf-L5kOBVNrlF7n7e7p"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 text-center px-8 max-w-4xl">
+<span class="font-label-caps text-label-caps text-secondary mb-4 block tracking-[0.2em]">ESTABLISHED AUTHORITY</span>
+<h1 class="font-display-hero text-display-hero text-on-surface mb-8">Authoritative Counsel. Meticulous Execution.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    Jupiter Law represents the pinnacle of legal excellence in Manchester, providing strategic litigation and corporate advisory services to those who demand uncompromising results.
+                </p>
+</div>
+</section>
+<!-- Our Story & Vision (Bento-style layout) -->
+<section class="py-[120px] px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<div class="md:col-span-7 flex flex-col justify-center">
+<span class="font-label-caps text-label-caps text-secondary mb-4 block">THE GENESIS</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">A Legacy of Intellectual Rigour</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                        Founded on the principle that complex legal challenges require more than just knowledge—they require a strategic architecture. Jupiter Law was established to bridge the gap between traditional legal practice and the fast-paced, high-stakes requirements of modern enterprise and private litigation.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Our vision is singular: to remain the most sophisticated boutique legal entity in the North West. We do not aim for volume; we aim for precision. By maintaining a lean, partner-led structure, we ensure that every client receives the direct expertise of a senior legal mind.
+                    </p>
+</div>
+<div class="md:col-span-5 grid grid-cols-1 gap-8">
+<div class="glass-panel border border-slate-400/20 p-8 rounded-lg">
+<span class="material-symbols-outlined text-secondary mb-4 text-3xl" data-icon="gavel">gavel</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Integrity</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Unwavering ethical standards in every negotiation and courtroom appearance.</p>
+</div>
+<div class="glass-panel border border-slate-400/20 p-8 rounded-lg">
+<span class="material-symbols-outlined text-secondary mb-4 text-3xl" data-icon="insights">insights</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Strategy</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Bespoke legal frameworks designed to mitigate risk and capitalise on opportunity.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Partner Profile Section -->
+<section class="bg-surface-container-low py-[120px]">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row gap-16 items-center">
+<div class="w-full md:w-1/2 relative">
+<div class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-secondary/40"></div>
+<img class="w-full h-[600px] object-cover grayscale brightness-90 border border-slate-400/20" data-alt="A professional, high-end black and white portrait of Aatif Iqbal, a male solicitor with a beard, wearing a tailored blazer and white shirt. He is standing with arms crossed in an office setting with framed legal certificates in the background. The mood is serious, authoritative, and trustworthy, perfectly aligned with Jupiter Law's sophisticated brand identity." src="https://lh3.googleusercontent.com/aida/ADBb0uhPvRddBORpnGuJZx6DZ0DJkortFClL4W0OZ-bxmshUngLKfNUCevBgQ_xHiK6wlpEG_nwCLtCqfMcxjPmI-wIWxxJTEjv1dmJWsJp5KD4DraFWcCdg7mp06t-ojoU2R2KNAKgUOtkhGRt8gCB6VhmtUNZdKoRKxOonp036gntH0K0aFT3CjTex1UlYU3hgwV3PozSsxcYBdNkijJM1J9JEUY2T52yFCaFT71VIYdMAq4oXRAMqyKW8gh-1F0Gmgvqg8xhoH-xfe8E"/>
+<div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-secondary/40"></div>
+</div>
+<div class="w-full md:w-1/2">
+<span class="font-label-caps text-label-caps text-secondary mb-4 block">SOLE PARTNER</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Aatif Iqbal</h2>
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-8 uppercase tracking-widest">LLB (Hons), LLM, Senior Litigator</p>
+<div class="space-y-6">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                Aatif Iqbal is the driving force behind Jupiter Law. With over two decades of experience in commercial litigation and high-net-worth dispute resolution, Aatif has earned a reputation as a meticulous strategist and a formidable advocate for his clients' interests.
+                            </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                His approach combines a deep understanding of British common law with a pragmatic, commercial mindset. Aatif personally oversees every instruction, ensuring that the firm's hallmark of excellence is maintained across all practice areas.
+                            </p>
+<div class="pt-8 grid grid-cols-2 gap-4 border-t border-slate-400/20">
+<div>
+<h4 class="font-label-caps text-label-caps text-secondary mb-1">EMAIL</h4>
+<p class="font-body-md text-body-md text-on-surface">a.iqbal@jupiterlaw.co.uk</p>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-secondary mb-1">OFFICE</h4>
+<p class="font-body-md text-body-md text-on-surface">Spinningfields, Manchester</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Bar -->
+<section class="py-16 border-y border-slate-400/20 bg-surface">
+<div class="max-w-7xl mx-auto px-8 flex flex-wrap justify-between items-center opacity-40 grayscale gap-8">
+<span class="font-label-caps text-lg tracking-widest">SOLICITORS REGULATION AUTHORITY</span>
+<span class="font-label-caps text-lg tracking-widest">LAW SOCIETY</span>
+<span class="font-label-caps text-lg tracking-widest">LEXCEL ACCREDITED</span>
+<span class="font-label-caps text-lg tracking-widest">CHAMBERS &amp; PARTNERS</span>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 border-t border-slate-400/20">
+<div class="max-w-7xl mx-auto px-8 py-20 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col gap-4 text-center md:text-left">
+<div class="text-lg font-bold text-slate-100">Jupiter Law</div>
+<p class="font-inter text-sm text-slate-400 max-w-sm">© 2024 Jupiter Law LLP. Authoritative Legal Representation in Manchester.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-inter text-sm text-slate-500 hover:text-slate-100 transition-colors" href="#">Privacy Policy</a>
+<a class="font-inter text-sm text-slate-500 hover:text-slate-100 transition-colors" href="#">Terms of Service</a>
+<a class="font-inter text-sm text-slate-500 hover:text-slate-100 transition-colors" href="#">Regulatory Information</a>
+<a class="font-inter text-sm text-slate-500 hover:text-slate-100 transition-colors" href="#">Sitemap</a>
+</div>
+</div>
+</footer>
+</body></html>

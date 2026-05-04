@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en-GB"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "error": "#ffb4ab",
+                      "primary": "#bec6e0",
+                      "secondary-container": "#604403",
+                      "tertiary-container": "#081828",
+                      "inverse-primary": "#565e74",
+                      "on-primary-container": "#798098",
+                      "on-error-container": "#ffdad6",
+                      "error-container": "#93000a",
+                      "inverse-on-surface": "#263143",
+                      "on-surface": "#d8e3fb",
+                      "on-secondary-container": "#dab36a",
+                      "outline": "#909097",
+                      "outline-variant": "#45464d",
+                      "on-primary-fixed": "#131b2e",
+                      "on-tertiary": "#233143",
+                      "on-secondary": "#412d00",
+                      "primary-fixed-dim": "#bec6e0",
+                      "on-error": "#690005",
+                      "secondary": "#e9c176",
+                      "tertiary": "#b9c8de",
+                      "inverse-surface": "#d8e3fb",
+                      "on-secondary-fixed": "#261900",
+                      "tertiary-fixed-dim": "#b9c8de",
+                      "surface-container-low": "#111c2d",
+                      "surface-variant": "#2a3548",
+                      "surface-tint": "#bec6e0",
+                      "secondary-fixed": "#ffdea5",
+                      "primary-fixed": "#dae2fd",
+                      "surface-dim": "#081425",
+                      "on-primary": "#283044",
+                      "primary-container": "#0f172a",
+                      "on-tertiary-container": "#738296",
+                      "on-surface-variant": "#c6c6cd",
+                      "on-secondary-fixed-variant": "#5d4201",
+                      "on-primary-fixed-variant": "#3f465c",
+                      "surface-container-highest": "#2a3548",
+                      "on-tertiary-fixed-variant": "#39485a",
+                      "on-tertiary-fixed": "#0d1c2d",
+                      "surface-container-high": "#1f2a3c",
+                      "surface-container-lowest": "#040e1f",
+                      "surface": "#081425",
+                      "on-background": "#d8e3fb",
+                      "tertiary-fixed": "#d4e4fa",
+                      "surface-container": "#152031",
+                      "background": "#081425",
+                      "surface-bright": "#2f3a4c",
+                      "secondary-fixed-dim": "#e9c176"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "margin-edge": "64px",
+                      "gutter": "32px",
+                      "container-max": "1280px",
+                      "section-gap": "120px"
+              },
+              "fontFamily": {
+                      "button": ["Inter"],
+                      "body-md": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "headline-md": ["Inter"],
+                      "headline-lg": ["Inter"],
+                      "label-caps": ["Inter"],
+                      "display-hero": ["Inter"]
+              },
+              "fontSize": {
+                      "button": ["14px", {"lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-md": ["30px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                      "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                      "display-hero": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="bg-slate-950/80 backdrop-blur-md fixed top-0 w-full z-50 border-b border-slate-400/20">
+<div class="flex justify-between items-center px-8 py-6 max-w-full">
+<div class="text-xl font-bold tracking-tighter text-slate-100 uppercase">Jupiter Law</div>
+<div class="hidden lg:flex items-center gap-12">
+<a class="font-inter uppercase tracking-widest text-xs font-semibold text-amber-500 border-b-2 border-amber-500 pb-1" href="#">Practice Areas</a>
+<a class="font-inter uppercase tracking-widest text-xs font-semibold text-slate-400 hover:text-slate-100 transition-colors" href="#">About Us</a>
+<a class="font-inter uppercase tracking-widest text-xs font-semibold text-slate-400 hover:text-slate-100 transition-colors" href="#">Success Stories</a>
+<a class="font-inter uppercase tracking-widest text-xs font-semibold text-slate-400 hover:text-slate-100 transition-colors" href="#">Careers</a>
+</div>
+<button class="bg-secondary text-on-secondary px-6 py-3 rounded-lg font-button text-button hover:bg-secondary-fixed transition-all duration-300 transform hover:scale-95">
+                Consultation
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover brightness-[0.3]" data-alt="A cinematic, low-exposure wide shot of the Manchester skyline at dusk, featuring the silhouette of Deansgate Square and Beetham Tower. The sky is a deep indigo transitioning into charcoal black. The image has a sophisticated dark blue color grade, creating a high-end corporate atmosphere that feels authoritative and meticulous. Sharp architectural lines are highlighted by subtle city lights, reflecting a mood of unwavering expertise and high-stakes legal capability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCzfJOOD5zl1ieFSeCRhOpgPZeHzMFDin5NyNVlSIhYlP7V12JHJHaDEpaCGWqxwDdknn1JDuB9fJ9bLlkG8YXtMdM_lJa6Kl1aQG7BfIdSWqcZgLogX0rb7AuP4zoiFLhNIeKEWpaapaPSZXYKOjseIOx5HJYcIzcbJjwQ-0347_9vQUSfkzfFE0Z31XtY4QD7-FwzWaoqxd7-a90mcl8FPa7_GBLoXZDM03CfwggYNCPWkr_tFfDL2Vc1ecjW8kxASJxQhPSoBjq"/>
+</div>
+<div class="relative z-10 max-w-[1280px] px-8 text-center">
+<div class="mb-6">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em]">Manchester's Premier Litigation Firm</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-on-surface mb-8 max-w-4xl mx-auto">
+                Authoritative Legal Representation in Complex Matters
+            </h1>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl mx-auto mb-12">
+                Specialising in Personal Injury, Immigration, and Corporate Litigation for clients who demand meticulous expertise.
+            </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="bg-secondary text-on-secondary px-10 py-5 rounded-lg font-button text-button uppercase tracking-wider">
+                    Submit Enquiry
+                </button>
+<button class="border border-outline/30 text-on-surface px-10 py-5 rounded-lg font-button text-button uppercase tracking-wider hover:bg-surface-variant transition-colors">
+                    Our Expertise
+                </button>
+</div>
+</div>
+</section>
+<!-- Trust Bar -->
+<div class="bg-surface-container-low py-10 border-y border-outline-variant/10">
+<div class="max-w-[1280px] mx-auto px-8 flex flex-wrap justify-between items-center opacity-40 grayscale gap-8">
+<span class="font-label-caps text-sm">LAW SOCIETY ACCREDITED</span>
+<span class="font-label-caps text-sm">SRA REGULATED</span>
+<span class="font-label-caps text-sm">LEXCEL QUALITY MARK</span>
+<span class="font-label-caps text-sm">MANCHESTER LAW ASSOC.</span>
+<span class="font-label-caps text-sm">CHAMBERS &amp; PARTNERS 2024</span>
+</div>
+</div>
+<!-- Practice Areas - Bento Grid -->
+<section class="py-[120px] max-w-[1280px] mx-auto px-8">
+<div class="mb-16">
+<h2 class="font-headline-lg text-headline-lg mb-4 text-on-surface">Practice Specialisations</h2>
+<div class="h-1 w-20 bg-secondary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 h-auto">
+<!-- Corporate Litigation -->
+<div class="md:col-span-8 bg-surface-container border border-outline/20 p-12 hover:border-secondary transition-colors duration-500 group relative overflow-hidden">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6 block" data-icon="account_balance">account_balance</span>
+<h3 class="font-headline-md text-headline-md mb-4 text-on-surface">Corporate Litigation</h3>
+<p class="font-body-md text-on-surface-variant max-w-lg">
+                        Navigating high-stakes commercial disputes with surgical precision. We protect corporate interests through strategic advocacy and meticulous attention to contractual integrity.
+                    </p>
+</div>
+<div class="absolute right-0 bottom-0 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[200px]" data-icon="gavel">gavel</span>
+</div>
+</div>
+<!-- Personal Injury -->
+<div class="md:col-span-4 bg-surface-container border border-outline/20 p-10 hover:border-secondary transition-colors duration-500 group">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6 block" data-icon="medical_services">medical_services</span>
+<h3 class="font-headline-md text-2xl mb-4 text-on-surface">Personal Injury</h3>
+<p class="font-body-md text-on-surface-variant">
+                    Specialising in catastrophic injury claims and professional negligence. Restoring balance to the lives of the seriously injured.
+                </p>
+</div>
+<!-- Immigration -->
+<div class="md:col-span-4 bg-surface-container border border-outline/20 p-10 hover:border-secondary transition-colors duration-500 group">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6 block" data-icon="language">language</span>
+<h3 class="font-headline-md text-2xl mb-4 text-on-surface">Immigration</h3>
+<p class="font-body-md text-on-surface-variant">
+                    Authoritative counsel for corporate immigration, high-net-worth individual visas, and complex residency appeals in a shifting legal landscape.
+                </p>
+</div>
+<!-- Principal Partner -->
+<div class="md:col-span-8 bg-primary-container border border-outline/20 p-12 flex flex-col md:flex-row items-center gap-12">
+<div class="w-48 h-48 rounded-full overflow-hidden flex-shrink-0 border-2 border-secondary/30">
+<img class="w-full h-full object-cover" data-alt="A professional black and white portrait of Aatif Iqbal, Principal Partner of Jupiter Law, in a sophisticated office setting with legal-themed artwork in the background." src="https://lh3.googleusercontent.com/aida/ADBb0uhPvRddBORpnGuJZx6DZ0DJkortFClL4W0OZ-bxmshUngLKfNUCevBgQ_xHiK6wlpEG_nwCLtCqfMcxjPmI-wIWxxJTEjv1dmJWsJp5KD4DraFWcCdg7mp06t-ojoU2R2KNAKgUOtkhGRt8gCB6VhmtUNZdKoRKxOonp036gntH0K0aFT3CjTex1UlYU3hgwV3PozSsxcYBdNkijJM1J9JEUY2T52yFCaFT71VIYdMAq4oXRAMqyKW8gh-1F0Gmgvqg8xhoH-xfe8E"/>
+</div>
+<div>
+<span class="font-label-caps text-secondary mb-2 block">LEADERSHIP</span>
+<h3 class="font-headline-md text-headline-md mb-2 text-on-surface">Aatif Iqbal</h3>
+<p class="font-body-md text-secondary mb-4 italic">Principal Partner</p>
+<p class="font-body-md text-on-surface-variant">
+                        With over two decades of practice in Manchester's legal circuit, Aatif leads the firm with a philosophy of unwavering commitment to excellence and strategic dominance in the courtroom.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Map & Contact Section -->
+<section class="bg-surface-container-lowest py-[120px]">
+<div class="max-w-[1280px] mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div>
+<span class="font-label-caps text-secondary mb-4 block">MANCHESTER HQ</span>
+<h2 class="font-headline-lg text-headline-lg mb-8 text-on-surface">Connect with Jupiter Law</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-secondary" data-icon="location_on">location_on</span>
+<div>
+<p class="font-body-lg text-on-surface font-semibold">Our Office</p>
+<address class="font-body-md text-on-surface-variant not-italic">
+                                Bartle House, Oxford Court,<br/>
+                                Manchester, M2 3WQ
+                            </address>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-secondary" data-icon="call">call</span>
+<div>
+<p class="font-body-lg text-on-surface font-semibold">Direct Enquiry Line</p>
+<p class="font-body-md text-on-surface-variant">07711 287 111</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-secondary" data-icon="mail">mail</span>
+<div>
+<p class="font-body-lg text-on-surface font-semibold">Email</p>
+<p class="font-body-md text-on-surface-variant">enquiries@jupiterlaw.co.uk</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative min-h-[400px] border border-outline/20">
+<img class="w-full h-full object-cover grayscale brightness-50" data-alt="A stylized, architectural map view of central Manchester, focusing on the area around Oxford Court. The map is rendered in dark mode with silver and charcoal tones. Highlights of major landmarks like Manchester Central are visible in subtle amber glows. The visual style is executive and technical, matching the corporate law firm's aesthetic." data-location="Manchester" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnd0ai0lZdgWb3J2NmPsXK6ROT1icGQ5TB467MQ0JANMFgkA0C8jF7_pnfXwyIrOzjEQjHawaYpGWYb6zxyQ8DDJfUlNd-he-M_3tzBtdRPI6b0bgUZgd_a_viYz72khkIo2rEjGq19JE04qm7ITI8AOCpSo1ScnOIE6B89cXYj5bMOlhu7DGn-N0cVitEAPQUO3UZRNxc0LDQF4Yadwz1UEreJLrjXmf4L_aKL0ZoKlnajelm80te95kWfA-Ama9LGDdPDVsQQjPr"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-slate-950/90 p-8 border border-secondary text-center max-w-xs backdrop-blur-sm">
+<p class="text-on-surface font-button mb-2">BARTLE HOUSE</p>
+<p class="text-on-surface-variant text-xs">VISIT BY APPOINTMENT ONLY</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-950 border-t border-slate-400/20">
+<div class="max-w-7xl mx-auto px-8 py-20 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-center md:text-left">
+<div class="text-lg font-bold text-slate-100 mb-2 uppercase">Jupiter Law</div>
+<p class="font-inter text-sm text-slate-400 max-w-md">
+                    © 2024 Jupiter Law LLP. Authoritative Legal Representation in Manchester.
+                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-slate-500 hover:text-slate-100 transition-colors font-inter text-sm" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-slate-100 transition-colors font-inter text-sm" href="#">Terms of Service</a>
+<a class="text-slate-500 hover:text-slate-100 transition-colors font-inter text-sm" href="#">Regulatory Information</a>
+<a class="text-slate-500 hover:text-slate-100 transition-colors font-inter text-sm" href="#">Sitemap</a>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 border border-slate-400/20 flex items-center justify-center text-slate-400 hover:text-secondary hover:border-secondary transition-all cursor-pointer">
+<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
+</div>
+<div class="w-10 h-10 border border-slate-400/20 flex items-center justify-center text-slate-400 hover:text-secondary hover:border-secondary transition-all cursor-pointer">
+<span class="material-symbols-outlined text-sm" data-icon="work">work</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

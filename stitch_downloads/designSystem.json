@@ -1,0 +1,131 @@
+{
+  "name": "assets/5263ce8f3d6045c19f0a02c9c813d1b5",
+  "designSystem": {
+    "displayName": "Celestial Authority",
+    "styleGuidelines": "## Brand & Style\n\nThis design system is built to project an image of unwavering expertise and high-stakes capability. The brand personality is authoritative and meticulous, catering to clients who require serious representation in complex legal matters. \n\nThe visual style is a fusion of **Corporate Minimalism** and **High-Contrast Modernism**. It prioritizes clarity and executive-level aesthetics through a dark-mode-first approach. By utilizing generous whitespace and a restricted, high-end color palette, the system ensures that information is presented with gravitas. The aesthetic movement draws from high-end financial and legal institutions, using sharp structural lines and subtle tonal shifts to create a sense of architectural permanence and trust.\n\n## Layout & Spacing\n\nThe layout philosophy follows a **Fixed Grid** model for desktop to maintain a prestigious, editorial feel, while transitioning to a fluid model for mobile. \n\n- **Grid:** A 12-column grid with wide 32px gutters.\n- **Rhythm:** Use an 8px base unit. Section gaps are intentionally large (120px+) to allow the Manchester skyline imagery and high-end typography room to breathe.\n- **Imagery:** Hero elements must feature high-resolution, low-exposure photography of the Manchester skyline (e.g., Deansgate Square, Beetham Tower) treated with a dark blue color grade to integrate seamlessly with the UI.\n\n## Elevation & Depth\n\nTo maintain a \"High-End Corporate\" feel, this design system avoids heavy shadows. Instead, it utilizes **Tonal Layers** and **Low-Contrast Outlines**.\n\n- **Layers:** Depth is communicated by stepping up the brightness of the background color (e.g., moving from the primary background to a secondary surface).\n- **Borders:** Every container and card should feature a crisp, 1px border. Use a low-opacity silver (#94A3B8 at 20% opacity) to define edges without creating visual clutter.\n- **Glassmorphism:** Use subtle backdrop blurs (10px - 20px) on navigation bars and floating modals to create a sense of modern transparency and high-tech sophistication.\n\n## Components\n\n- **Buttons:** Primary buttons use the Gold accent with dark text. Secondary buttons are \"ghost\" style with a silver 1px border. All buttons use the 'button' typography and 0.25rem corner radius.\n- **Input Fields:** Designed with a dark fill (darker than the surface) and a 1px silver border that glows slightly when focused. Labels must be positioned above the field using the 'label-caps' style.\n- **Cards:** Used for practice areas or case studies. Cards should have no shadow; they are defined by a 1px border and a subtle background shift. Hover states should involve the border color changing to Gold.\n- **Chips:** Small, rectangular badges with a subtle silver stroke used for categorizing litigation types.\n- **Hero Photography:** The hero section should feature the Manchester skyline with a dark overlay. The text should be center-aligned or left-aligned with a massive \"Display-Hero\" headline to establish immediate authority.\n- **Legal Accents:** Include a \"Trust Bar\" featuring logos of legal associations or certifications, rendered in grayscale/silver to maintain the sophisticated palette.",
+    "theme": {
+      "colorMode": "DARK",
+      "font": "INTER",
+      "roundness": "ROUND_FOUR",
+      "customColor": "#0F172A",
+      "headlineFont": "INTER",
+      "bodyFont": "INTER",
+      "labelFont": "INTER",
+      "namedColors": {
+        "on_primary_fixed_variant": "#3f465c",
+        "on_surface_variant": "#c6c6cd",
+        "on_tertiary": "#233143",
+        "primary_container": "#0f172a",
+        "outline_variant": "#45464d",
+        "secondary_fixed_dim": "#e9c176",
+        "on_primary": "#283044",
+        "on_secondary_fixed": "#261900",
+        "on_error": "#690005",
+        "surface_variant": "#2a3548",
+        "on_tertiary_fixed": "#0d1c2d",
+        "surface_container_highest": "#2a3548",
+        "on_surface": "#d8e3fb",
+        "secondary_fixed": "#ffdea5",
+        "outline": "#909097",
+        "primary": "#bec6e0",
+        "primary_fixed": "#dae2fd",
+        "on_tertiary_container": "#738296",
+        "inverse_surface": "#d8e3fb",
+        "tertiary": "#b9c8de",
+        "on_error_container": "#ffdad6",
+        "secondary": "#e9c176",
+        "on_tertiary_fixed_variant": "#39485a",
+        "tertiary_container": "#081828",
+        "surface_tint": "#bec6e0",
+        "surface_container_high": "#1f2a3c",
+        "surface_container_low": "#111c2d",
+        "tertiary_fixed": "#d4e4fa",
+        "secondary_container": "#604403",
+        "inverse_on_surface": "#263143",
+        "error": "#ffb4ab",
+        "on_background": "#d8e3fb",
+        "surface_bright": "#2f3a4c",
+        "surface_container_lowest": "#040e1f",
+        "surface_container": "#152031",
+        "on_primary_fixed": "#131b2e",
+        "inverse_primary": "#565e74",
+        "on_secondary_fixed_variant": "#5d4201",
+        "on_primary_container": "#798098",
+        "error_container": "#93000a",
+        "surface_dim": "#081425",
+        "on_secondary_container": "#dab36a",
+        "on_secondary": "#412d00",
+        "surface": "#081425",
+        "primary_fixed_dim": "#bec6e0",
+        "background": "#081425",
+        "tertiary_fixed_dim": "#b9c8de"
+      },
+      "designMd": "---\nname: Celestial Authority\ncolors:\n  surface: '#081425'\n  surface-dim: '#081425'\n  surface-bright: '#2f3a4c'\n  surface-container-lowest: '#040e1f'\n  surface-container-low: '#111c2d'\n  surface-container: '#152031'\n  surface-container-high: '#1f2a3c'\n  surface-container-highest: '#2a3548'\n  on-surface: '#d8e3fb'\n  on-surface-variant: '#c6c6cd'\n  inverse-surface: '#d8e3fb'\n  inverse-on-surface: '#263143'\n  outline: '#909097'\n  outline-variant: '#45464d'\n  surface-tint: '#bec6e0'\n  primary: '#bec6e0'\n  on-primary: '#283044'\n  primary-container: '#0f172a'\n  on-primary-container: '#798098'\n  inverse-primary: '#565e74'\n  secondary: '#e9c176'\n  on-secondary: '#412d00'\n  secondary-container: '#604403'\n  on-secondary-container: '#dab36a'\n  tertiary: '#b9c8de'\n  on-tertiary: '#233143'\n  tertiary-container: '#081828'\n  on-tertiary-container: '#738296'\n  error: '#ffb4ab'\n  on-error: '#690005'\n  error-container: '#93000a'\n  on-error-container: '#ffdad6'\n  primary-fixed: '#dae2fd'\n  primary-fixed-dim: '#bec6e0'\n  on-primary-fixed: '#131b2e'\n  on-primary-fixed-variant: '#3f465c'\n  secondary-fixed: '#ffdea5'\n  secondary-fixed-dim: '#e9c176'\n  on-secondary-fixed: '#261900'\n  on-secondary-fixed-variant: '#5d4201'\n  tertiary-fixed: '#d4e4fa'\n  tertiary-fixed-dim: '#b9c8de'\n  on-tertiary-fixed: '#0d1c2d'\n  on-tertiary-fixed-variant: '#39485a'\n  background: '#081425'\n  on-background: '#d8e3fb'\n  surface-variant: '#2a3548'\ntypography:\n  display-hero:\n    fontFamily: Inter\n    fontSize: 64px\n    fontWeight: '600'\n    lineHeight: '1.1'\n    letterSpacing: -0.02em\n  headline-lg:\n    fontFamily: Inter\n    fontSize: 40px\n    fontWeight: '600'\n    lineHeight: '1.2'\n    letterSpacing: -0.01em\n  headline-md:\n    fontFamily: Inter\n    fontSize: 30px\n    fontWeight: '500'\n    lineHeight: '1.3'\n  body-lg:\n    fontFamily: Inter\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: '1.6'\n  body-md:\n    fontFamily: Inter\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: '1.6'\n  label-caps:\n    fontFamily: Inter\n    fontSize: 12px\n    fontWeight: '700'\n    lineHeight: '1.2'\n    letterSpacing: 0.1em\n  button:\n    fontFamily: Inter\n    fontSize: 14px\n    fontWeight: '600'\n    lineHeight: '1'\n    letterSpacing: 0.02em\nrounded:\n  sm: 0.125rem\n  DEFAULT: 0.25rem\n  md: 0.375rem\n  lg: 0.5rem\n  xl: 0.75rem\n  full: 9999px\nspacing:\n  unit: 8px\n  container-max: 1280px\n  gutter: 32px\n  margin-edge: 64px\n  section-gap: 120px\n---\n\n## Brand & Style\n\nThis design system is built to project an image of unwavering expertise and high-stakes capability. The brand personality is authoritative and meticulous, catering to clients who require serious representation in complex legal matters. \n\nThe visual style is a fusion of **Corporate Minimalism** and **High-Contrast Modernism**. It prioritizes clarity and executive-level aesthetics through a dark-mode-first approach. By utilizing generous whitespace and a restricted, high-end color palette, the system ensures that information is presented with gravitas. The aesthetic movement draws from high-end financial and legal institutions, using sharp structural lines and subtle tonal shifts to create a sense of architectural permanence and trust.\n\n## Colors\n\nThe palette is anchored in a sophisticated 'Dark' theme to differentiate from the typical clinical white of smaller firms. \n\n- **Primary Backgrounds:** Use a deep Midnight Blue (#0F172A) for the main canvas, providing a more modern and expansive feel than pure black.\n- **Accents:** A refined Gold (#C5A059) is used sparingly for primary actions and highlights, signifying prestige and success. \n- **Supporting Tones:** Muted Corporate Silver (#94A3B8) is used for secondary text and borders to maintain a cool, professional temperature.\n- **Surfaces:** Elevated containers use a slightly lighter Charcoal (#1E293B) to create depth without sacrificing the dark aesthetic.\n- **Gradients:** Use very subtle linear gradients from the primary background to a slightly lighter shade to simulate professional studio lighting on hero sections.\n\n## Typography\n\nThis design system utilizes **Inter** for its systematic, utilitarian, and highly legible qualities, serving as a premium alternative that captures the clean, modern spirit of 'Airport'. \n\nHeadlines are set with tight tracking and bold weights to command attention, while body copy maintains generous line height for readability during long-form legal disclosures. For navigation and category markers, use the 'label-caps' style to introduce an institutional, organized feel. High-contrast white or silver text is required against the dark backgrounds to ensure WCAG accessibility compliance.\n\n## Layout & Spacing\n\nThe layout philosophy follows a **Fixed Grid** model for desktop to maintain a prestigious, editorial feel, while transitioning to a fluid model for mobile. \n\n- **Grid:** A 12-column grid with wide 32px gutters.\n- **Rhythm:** Use an 8px base unit. Section gaps are intentionally large (120px+) to allow the Manchester skyline imagery and high-end typography room to breathe.\n- **Imagery:** Hero elements must feature high-resolution, low-exposure photography of the Manchester skyline (e.g., Deansgate Square, Beetham Tower) treated with a dark blue color grade to integrate seamlessly with the UI.\n\n## Elevation & Depth\n\nTo maintain a \"High-End Corporate\" feel, this design system avoids heavy shadows. Instead, it utilizes **Tonal Layers** and **Low-Contrast Outlines**.\n\n- **Layers:** Depth is communicated by stepping up the brightness of the background color (e.g., moving from the primary background to a secondary surface).\n- **Borders:** Every container and card should feature a crisp, 1px border. Use a low-opacity silver (#94A3B8 at 20% opacity) to define edges without creating visual clutter.\n- **Glassmorphism:** Use subtle backdrop blurs (10px - 20px) on navigation bars and floating modals to create a sense of modern transparency and high-tech sophistication.\n\n## Shapes\n\nThe shape language is conservative and structural. The system uses **Soft (0.25rem)** rounding for standard elements like buttons and input fields. This slight rounding takes the \"edge\" off the corporate aesthetic, making it feel modern rather than dated, while still appearing much more serious than fully rounded or pill-shaped systems. Cards and larger containers should use `rounded-lg` (0.5rem) to maintain a subtle, premium softness at scale.\n\n## Components\n\n- **Buttons:** Primary buttons use the Gold accent with dark text. Secondary buttons are \"ghost\" style with a silver 1px border. All buttons use the 'button' typography and 0.25rem corner radius.\n- **Input Fields:** Designed with a dark fill (darker than the surface) and a 1px silver border that glows slightly when focused. Labels must be positioned above the field using the 'label-caps' style.\n- **Cards:** Used for practice areas or case studies. Cards should have no shadow; they are defined by a 1px border and a subtle background shift. Hover states should involve the border color changing to Gold.\n- **Chips:** Small, rectangular badges with a subtle silver stroke used for categorizing litigation types.\n- **Hero Photography:** The hero section should feature the Manchester skyline with a dark overlay. The text should be center-aligned or left-aligned with a massive \"Display-Hero\" headline to establish immediate authority.\n- **Legal Accents:** Include a \"Trust Bar\" featuring logos of legal associations or certifications, rendered in grayscale/silver to maintain the sophisticated palette.",
+      "colorVariant": "FIDELITY",
+      "overridePrimaryColor": "#0F172A",
+      "overrideSecondaryColor": "#C5A059",
+      "overrideTertiaryColor": "#94A3B8",
+      "overrideNeutralColor": "#1E293B",
+      "spacingScale": 2,
+      "typography": {
+        "label-caps": {
+          "fontFamily": "Inter",
+          "fontSize": "12px",
+          "fontWeight": "700",
+          "lineHeight": "1.2",
+          "letterSpacing": "0.1em"
+        },
+        "body-md": {
+          "fontFamily": "Inter",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "1.6"
+        },
+        "display-hero": {
+          "fontFamily": "Inter",
+          "fontSize": "64px",
+          "fontWeight": "600",
+          "lineHeight": "1.1",
+          "letterSpacing": "-0.02em"
+        },
+        "body-lg": {
+          "fontFamily": "Inter",
+          "fontSize": "18px",
+          "fontWeight": "400",
+          "lineHeight": "1.6"
+        },
+        "headline-lg": {
+          "fontFamily": "Inter",
+          "fontSize": "40px",
+          "fontWeight": "600",
+          "lineHeight": "1.2",
+          "letterSpacing": "-0.01em"
+        },
+        "button": {
+          "fontFamily": "Inter",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "lineHeight": "1",
+          "letterSpacing": "0.02em"
+        },
+        "headline-md": {
+          "fontFamily": "Inter",
+          "fontSize": "30px",
+          "fontWeight": "500",
+          "lineHeight": "1.3"
+        }
+      },
+      "spacing": {
+        "margin-edge": "64px",
+        "container-max": "1280px",
+        "gutter": "32px",
+        "unit": "8px",
+        "section-gap": "120px"
+      },
+      "headlineFontFamily": "Inter",
+      "bodyFontFamily": "Inter",
+      "labelFontFamily": "Inter"
+    }
+  },
+  "version": "1"
+}
