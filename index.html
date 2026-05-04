@@ -114,8 +114,8 @@
 <!-- TopNavBar -->
 <nav class="fixed top-8 left-1/2 -translate-x-1/2 w-[calc(100%-4rem)] max-w-7xl flex justify-between items-center px-10 py-5 z-50 bg-slate-950/40 backdrop-blur-xl border border-slate-400/20 rounded-[2.5rem] shadow-2xl transition-all duration-300">
 <div class="max-w-7xl mx-auto w-full flex justify-between items-center">
-<div class="flex items-center gap-3">
-<svg class="text-amber-400 fill-current w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 4L18 12L6 20V4Z"></path></svg>
+<div class="flex items-center gap-4">
+<svg class="text-amber-400 fill-current w-7 h-7" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 22H22L12 2Z"></path></svg>
 <div class="text-2xl font-bold tracking-tighter text-slate-100">Jupiter Law</div>
 </div>
 <div class="hidden md:flex items-center gap-8">
@@ -131,8 +131,10 @@
 <!-- Hero Section -->
 <header class="relative min-h-[716px] flex items-center pt-24 overflow-hidden">
 <div class="absolute inset-0 z-0">
+<video autoplay="" class="w-full h-full object-cover grayscale opacity-50" id="hero-video" loop="" muted="" playsinline="">
+<source src="hero-bg.mp4#t=5,60" type="video/mp4"/>
+</video>
 <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent z-10"></div>
-<img class="w-full h-full object-cover object-center" data-alt="A cinematic, low-exposure wide shot of the Manchester skyline at dusk, featuring the architectural silhouettes of Deansgate Square and Beetham Tower. The scene is graded with deep blue and slate tones to match a professional legal firm aesthetic. Subtle city lights twinkle through a moody, high-contrast atmosphere, projecting authority and sophisticated permanence. The lighting is soft yet dramatic, emphasizing the structural lines of the urban environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRoleyrurh7XxnyioJjo2RCXQ3E5DMQ7aHN9iRuIK1tQfB-sHNJ7dSzO9edTbNZnoFmi6ijfex4YjlPtQlMbQyf0kRVoEcTiUAPFPq_YMoaC9qgKIJMgkPpE2jLQB09N9XQrsZmSF9gk3ngjs4rDBRgMEkGLn5_kuvU1Yb5Bp4-EMZILEwqWuzdri89LYbvHgEkKYtyW9MSj1_Cqpoy7hqDRHG-zVPUPdbp1nOXDzrG-aCvr0uqKpYPTXmcRTrEGiyyNukLd_kBS9E"/>
 </div>
 <div class="relative z-20 max-w-7xl mx-auto px-8 w-full">
 <div class="max-w-2xl">
@@ -278,4 +280,19 @@
 </div>
 </div>
 </footer>
+<script>
+    const video = document.getElementById("hero-video");
+    if (video) {
+        video.addEventListener("timeupdate", function() {
+            if (this.currentTime >= 60) {
+                this.currentTime = 5;
+                this.play();
+            }
+        });
+        // Initial start at 5s
+        video.addEventListener("loadedmetadata", function() {
+            this.currentTime = 5;
+        });
+    }
+</script>
 </body></html>

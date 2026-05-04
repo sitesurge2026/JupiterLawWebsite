@@ -109,8 +109,8 @@
 <body class="bg-background text-on-background font-body-md overflow-x-hidden">
 <!-- TopNavBar -->
 <header class="fixed top-8 left-1/2 -translate-x-1/2 w-[calc(100%-4rem)] max-w-7xl flex justify-between items-center px-10 py-5 z-50 bg-slate-950/40 backdrop-blur-xl border border-slate-400/20 rounded-[2.5rem] shadow-2xl transition-all duration-300">
-<div class="flex items-center gap-3">
-<svg class="text-amber-400 fill-current w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 4L18 12L6 20V4Z"></path></svg>
+<div class="flex items-center gap-4">
+<svg class="text-amber-400 fill-current w-7 h-7" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 22H22L12 2Z"></path></svg>
 <div class="text-2xl font-bold tracking-tighter text-slate-100 uppercase">Jupiter Law</div>
 </div>
 <nav class="hidden md:flex items-center gap-8">
@@ -124,8 +124,10 @@
 <!-- Hero Section -->
 <section class="relative h-[614px] flex items-center justify-start px-8 md:px-margin-edge overflow-hidden border-b border-outline-variant/20">
 <div class="absolute inset-0 z-0">
+<video autoplay="" class="w-full h-full object-cover grayscale opacity-40" id="hero-video" loop="" muted="" playsinline="">
+<source src="hero-bg.mp4#t=5,60" type="video/mp4"/>
+</video>
 <div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent z-10"></div>
-<img class="w-full h-full object-cover grayscale opacity-40" data-alt="A cinematic, low-exposure wide shot of the Manchester skyline at dusk, featuring the iconic Beetham Tower and modern glass skyscrapers. The lighting is moody and dramatic with deep blue color grading and sharp architectural silhouettes against a fading twilight sky. This authoritative corporate aesthetic uses high-contrast blacks and dark blues to convey a sense of institutional permanence and professional power." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_Wx6awHut1nDqb28xep-jsIMNtmZsyZmnpke-CuGJVFPm1Ebo2rG66KlBNftBuYQ2soLtnQUBiEdy2a47bVafu6lMdhmQlrh9GJC2RTfVJIL_idwo6ITLDCaGGYBC7pQTA1WHYpqeKMuy4UQb9RhIX4jCNFZCsNGr_GkzyXZmJPhZaS3X31ErxeEcebpf50_pGZfT-nNmhwz2u8kiX0VCTwIC2IicYu0FhY35uYgwa8-tO77iSck02wNsIk3IyGKq_ZwT1bQqvHfh"/>
 </div>
 <div class="relative z-20 max-w-4xl">
 <p class="font-label-caps text-label-caps text-secondary mb-4">ESTABLISHING AUTHORITY</p>
@@ -269,4 +271,19 @@
 <a class="text-slate-500 hover:text-amber-400 transition-colors font-['Airport',_sans-serif] text-xs uppercase tracking-widest" href="index.html">Regulatory Information</a>
 </div>
 </footer>
+<script>
+    const video = document.getElementById("hero-video");
+    if (video) {
+        video.addEventListener("timeupdate", function() {
+            if (this.currentTime >= 60) {
+                this.currentTime = 5;
+                this.play();
+            }
+        });
+        // Initial start at 5s
+        video.addEventListener("loadedmetadata", function() {
+            this.currentTime = 5;
+        });
+    }
+</script>
 </body></html>
