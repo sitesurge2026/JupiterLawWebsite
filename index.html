@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html class="dark" lang="en-GB"><head>
+<title>Jupiter Law | Authoritative Legal Representation</title>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -97,43 +98,42 @@
         }
     </script>
 <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #081425;
+            color: #d8e3fb;
+        }
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
             vertical-align: middle;
-        }
-        body {
-            background-color: #081425;
-            color: #d8e3fb;
         }
         .tonal-border {
             border: 1px solid rgba(148, 163, 184, 0.2);
         }
     </style>
 </head>
-<body class="font-body-md">
-<!-- TopNavBar -->
-<nav class="fixed top-8 left-1/2 -translate-x-1/2 w-[calc(100%-4rem)] max-w-7xl flex justify-between items-center px-10 py-5 z-50 bg-slate-950/40 backdrop-blur-xl border border-slate-400/20 rounded-[2.5rem] shadow-2xl transition-all duration-300">
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden"><!-- TopNavBar --><nav class="fixed top-8 left-1/2 -translate-x-1/2 w-[calc(100%-4rem)] max-w-7xl flex justify-between items-center px-10 py-5 z-50 bg-slate-950/40 backdrop-blur-xl border border-slate-400/20 rounded-[2.5rem] shadow-2xl transition-all duration-300">
 <div class="max-w-7xl mx-auto w-full flex justify-between items-center">
 <div class="flex items-center gap-4">
 <svg class="text-amber-400 fill-current w-7 h-7" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 22H22L12 2Z"></path></svg>
 <div class="text-2xl font-bold tracking-tighter text-slate-100">Jupiter Law</div>
 </div>
 <div class="hidden md:flex items-center gap-8">
-<a class="font-['Airport',_sans-serif] tracking-tight text-sm uppercase font-semibold text-amber-400 border-b-2 border-amber-400 pb-1" href="index.html">Home</a>
-<a class="font-['Airport',_sans-serif] tracking-tight text-sm uppercase font-semibold text-slate-300 hover:text-amber-400 transition-colors" href="about-firm.html">About Us</a>
-<a class="font-['Airport',_sans-serif] tracking-tight text-sm uppercase font-semibold text-slate-300 hover:text-amber-400 transition-colors" href="contact.html">Contact</a>
+<a class="font-button tracking-tight text-sm uppercase font-semibold text-amber-400 border-b-2 border-amber-400 pb-1" href="index.html">Home</a>
+<a class="font-button tracking-tight text-sm uppercase font-semibold text-slate-300 hover:text-amber-400 transition-colors" href="about-firm.html">About Us</a>
+<a class="font-button tracking-tight text-sm uppercase font-semibold text-slate-300 hover:text-amber-400 transition-colors" href="contact.html">Contact</a>
 </div>
-<button class="bg-secondary text-on-secondary px-6 py-2 rounded-lg font-button text-button uppercase tracking-wider hover:opacity-90 transition-all">
-                Consultation
-            </button>
+<button class="bg-secondary text-on-secondary px-6 py-2 font-button text-button uppercase tracking-wider rounded-lg transition-all hover:scale-105 active:scale-95">Consultation</button>
 </div>
 </nav>
 <!-- Hero Section -->
-<header class="relative min-h-[716px] flex items-center pt-24 overflow-hidden">
+<header class="relative w-full aspect-[4/3] md:aspect-video lg:aspect-[21/9] min-h-[600px] flex items-center overflow-hidden">
 <div class="absolute inset-0 z-0">
-<video autoplay="" class="w-full h-full object-cover grayscale opacity-100" id="hero-video" loop="" muted="" playsinline="">
-<source src="hero-bg.mp4#t=10,60" type="video/mp4"/>
+<video autoplay="" class="w-full h-full object-cover scale-[2] grayscale opacity-100" id="hero-video" loop="" muted="" playsinline="">
+<source src="hero-bg.mp4#t=5,60" type="video/mp4"/>
 </video>
+<div class="absolute inset-0 bg-background/10 z-10"></div>
 <div class="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-background to-transparent z-20"></div>
 </div>
 <div class="relative z-20 max-w-7xl mx-auto px-8 w-full">
@@ -285,13 +285,13 @@
     if (video) {
         video.addEventListener("timeupdate", function() {
             if (this.currentTime >= 60) {
-                this.currentTime = 10;
+                this.currentTime = 5;
                 this.play();
             }
         });
-        // Initial start at 10s
+        // Initial start at 5s
         video.addEventListener("loadedmetadata", function() {
-            this.currentTime = 10;
+            this.currentTime = 5;
         });
     }
 </script>
