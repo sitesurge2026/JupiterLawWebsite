@@ -8,6 +8,8 @@ export async function onRequestPost(context) {
   const message = formData.get('message');
 
   // This uses the MailChannels integration which is free for Cloudflare Pages/Workers
+  // IMPORTANT: To ensure deliverability, add an SPF record to your domain: v=spf1 include:relay.mailchannels.net -all
+  // If your domain is not on Cloudflare, you may also need a Domain Verification TXT record.
   const send_email = await fetch('https://api.mailchannels.net/tx/v1/send', {
     method: 'POST',
     headers: {
